@@ -48,4 +48,24 @@ nav a:visited{ /*ziyaret edilme durumunu denetler*/
     font-size: 15px;
 }
 
+#anasayfa {
+    height: 500px;
+    background-image: url("../ts.webp");
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    }
 
+    #dark {
+        height: 500px;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    #icerik {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-55%,-80%);
+        color: wheat;
+    }
