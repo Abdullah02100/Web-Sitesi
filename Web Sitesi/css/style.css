@@ -69,3 +69,83 @@ nav a:visited{ /*ziyaret edilme durumunu denetler*/
         transform: translate(-55%,-80%);
         color: wheat;
     }
+
+    #Hakkinda{
+        background-color: #f8f9fa;
+        padding: 45px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 500px;
+    }
+
+    #hakkinda{
+        font-size: 50px;
+        color: #003666;
+        text-shadow: 0 1px 1px
+        black;
+    }
+
+    #container{
+        width: 1000px;
+        height: auto;
+        margin: auto;
+    }
+
+    #left{
+        float: left;
+        border-right: 3px solid #445c6e;
+        font-size: 25px;
+        width: 350px;
+        color: #445c6e;
+    }   
+
+    #h5left{
+        line-height: 1.6;
+        font-size: 15px;
+        font-weight: 500px;
+    }
+
+    #h5left, #right{
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    span{
+        font-size: 50px;
+        margin-right: 6px;
+        line-height: 40px;
+        color: #003666;
+        font-weight: 575px;
+        float: left;
+    }
+
+    #right{
+        float: right;
+        width: 610px;
+        color: #999999;
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 80px;
+    }
+
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mt100{
+        margin-top: 85px;
+    }
+
+    #pson{
+        color: 999;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 1.6;
+        margin-top: 25px;
+        font-weight: 100px;
+    }
+
