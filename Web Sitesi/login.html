@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sayfası</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm" action="login.php" method="post" onsubmit="return validateForm()">
+            <label for="username">Kullanıcı Adı (Öğrenci Numarası)</label>
+            <input type="text" id="username" name="username" placeholder="g231210035@sakarya.edu.tr" required>
+
+            <label for="password">Şifre</label>
+            <input type="password" id="password" name="password" placeholder="Şifre" required>
+
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = '';
+
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@sakarya\.edu\.tr$/;
+            if (!emailPattern.test(username)) {
+                errorMessage.textContent = 'Geçerli bir Sakarya Üniversitesi e-posta adresi girin.';
+                return false;
+            }
+
+            if (password !== username.split('@')[0]) {
+                errorMessage.textContent = 'Kullanıcı adı ve şifre eşleşmiyor.';
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
